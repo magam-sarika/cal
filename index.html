@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="calculator.jpg" type="image/x-icon">
+</head>
+<body> 
+    <center><h1>Calculator</h1></center>
+    <div class="c">
+        <div class="a">
+            <center>Value 1:<input type="number" placeholder="Enter the First Number" id="n1"></center>
+            
+        </div>
+        <br>
+        <div id="result"></div>
+        <br>
+        <div id="wait1">Wait</div>
+        <br>
+        <div class="b">
+            <input type="submit" value="add" id="add">
+            <input type="submit" value="sub" id="sub" onclick="sub()">
+        </div>
+        <br>
+        <div class="b">
+            <input type="submit" value="mul" id="mul" onclick="mul()">
+            <input type="submit" value="div" id="div" onclick="div()">
+        </div>
+        <br>
+        <div class="b">
+            <input type="submit" value="reload" id="reload" onclick="window.location.reload()">
+            <input type="submit" value="wait" class="reload" id="wait">
+        </div>
+
+    </div>
+
+    <!-- DOM-Document Object Model
+        1.getElementById()
+        2.getElemntByClassName()
+        3.getElementbyTagName()-->
+    <script src="design.js"></script>
+</body>
+</html>
